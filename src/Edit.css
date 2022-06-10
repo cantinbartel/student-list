@@ -1,0 +1,120 @@
+.container {
+    /* position: fixed; */
+    /* top: 10vh;
+    left: 50%;
+    transform: translateX(-50%); */
+    width: 60vw;
+    height: 80vh;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid rgb(229 231 235);
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+form {
+    /* height: 100%; */
+    /* margin-left: 20%; */
+}
+
+.personnalInfo {
+    display: flex;
+    justify-content: start;
+}
+
+.pictures {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-top: 1rem;
+}
+
+.picture, .cover {
+    margin-top: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(229 231 235);
+}
+
+::placeholder {
+    font-size: 1.1rem;
+}
+
+select {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(229 231 235);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.picture {
+    width: 4rem;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.upload:hover {
+    cursor: pointer;
+}
+
+.courses {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+ul {
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    z-index: 15;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

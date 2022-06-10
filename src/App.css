@@ -1,38 +1,123 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('./Edit.css');
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-container {
+  position: relative;
+}
+
+.profile-card {
+  border: 1px solid rgb(229 231 235);
+  width: 15rem;
+  height: 20rem;
+  padding: 4rem 2rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  position: relative;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  position: relative;
+}
+
+.profile-background-picture {
+  border-radius: 2rem 2rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile-picture {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  /* margin: auto; */
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.personnal-info {
+  margin-top: calc((15rem * 0.3) + 5rem);
+  text-transform: capitalize;
+}
+
+.name {
   text-align: center;
+  font-weight: 600;
+  font-size: large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.age {
+  text-align: center;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.courses {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.capsule {
+  background-color: cornflowerblue;
   color: white;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.add:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modify-student {
+  color: hsl(343, 88%, 69%);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edit-btn:hover {
+  color: hsl(343, 88%, 59%);
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: hsl(343, 88%, 59%);
+  cursor: pointer;
+}
+
+.add-student {
+  position: fixed;
+  top: 8rem;
+  right: 6rem;
+  font-size: 3rem;
+  color: hsl(343, 63%, 53%);
+}
+
+.add-student:hover {
+  color: hsl(343, 63%, 60%);
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.filter {
+  margin-left: 10%;
+  margin-bottom: 2rem;
 }
